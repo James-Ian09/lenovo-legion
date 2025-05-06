@@ -1,6 +1,7 @@
-import { appleImg, searchImg } from "../utils";
+import { appleImg, searchImg, bagImg } from "../utils";
 
 const Navbar = () => {
+  // const is just a convention, you can use let or var as well
   return (
     <header>
       <nav>
@@ -15,6 +16,7 @@ const Navbar = () => {
 
       <div>
         <img src={searchImg} alt="search" width={18} height={18} />
+        <img src={bagImg} alt="" width={18} height={18} />
       </div>
     </header>
   );
