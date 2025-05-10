@@ -1,5 +1,5 @@
 import { appleImg, searchImg, bagImg } from "../utils";
-import { navList } from "../constants/constants.d.ts";
+import { navLists } from "../constants";
 
 const Navbar = () => {
   // const is just a convention, you can use let or var as well
@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src={appleImg} alt="Apple" width={14} height={18} />
 
         <div className="flex flex-1 justify-center max-sm:hidden">
-          {navList.map((nav: string) => (
+          {navLists.map((nav: string) => (
             <div key={nav}>{nav}</div>
           ))}
         </div>
