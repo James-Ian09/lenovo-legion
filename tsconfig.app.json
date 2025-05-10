@@ -9,13 +9,13 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": false,
+    "allowImportingTsExtensions": true, // Requires noEmit or emitDeclarationOnly
     "isolatedModules": true,
     "moduleDetection": "force",
 
     /* Required for project references */
     "composite": true, // Enables incremental builds
-    "noEmit": false, // Allows emitting files
+    "noEmit": true, // Prevents emitting files (required for allowImportingTsExtensions)
 
     /* JSX */
     "jsx": "react-jsx",

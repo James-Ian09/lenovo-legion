@@ -9,7 +9,6 @@ function App(): JSX.Element {
       <Navbar />
       <Hero />
       <Highlights />
-      
     </main>
   );
 }
