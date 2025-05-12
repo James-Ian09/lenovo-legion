@@ -55,6 +55,7 @@ const Hero = () => {
         </a>
         <p className="font-normal text-xl">Buy one take one</p>
       </div>
+      <p>This is a testing to see if it really works or not </p>
     </section>
   );
 };
