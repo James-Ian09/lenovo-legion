@@ -18,10 +18,6 @@ body {
   user-select: none;
 }
 
-body::hover {
-  cursor: none;
-}
-
 canvas {
   touch-action: none;
 }
