@@ -5,10 +5,10 @@ const VideoCarousel = () => {
     <>
       <div className="flex item-center">
       {hightlightsSlides.map((list, i) => (
-        <div>
+        <div key = {list.id} id = "slider">
+          <div className = "video-carousel_container">
+          </div>
         <div/>
-
-
       ))}
       </div>
     </>
