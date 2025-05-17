@@ -6,7 +6,7 @@ import VideoCarousel from "./VideoCarousel";
 const Highlights = () => {
   useGSAP(() => {
     gsap.to("#title", { opacity: 1, y: 0 });
-    gsap.to(".link", { opacity: 1, y: 0, duration: 1, stagger: 0.25 }); // stagger is used to create a delay between the animations of each element, via** .link class
+    gsap.to(".link", { opacity: 1, y: 0, duration: 1, stagger: 0.9 }); // stagger is used to create a delay between the animations of each element, via** .link class
   }, []);
   return (
     <section
