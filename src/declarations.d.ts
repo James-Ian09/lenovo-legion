@@ -1,1 +1,5 @@
-import "./index.css"; // Should now work without errors!
+// declarations.d.ts
+declare module "*.css" {
+  const styles: { [className: string]: string };
+  export default styles;
+}
