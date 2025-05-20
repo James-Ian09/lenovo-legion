@@ -1,6 +1,17 @@
 import { hightlightsSlides } from "../constants";
+import { useEffect, useRef, useState } from "react";
 
 const VideoCarousel = () => {
+  const [video, setVideo] = useState({
+    isEnd: false,
+    startPlay: false,
+    videoId: 0,
+    isLastVideo: false,
+    isPlaying: false,
+  });
+
+  const { isEnd, isLastVideo, startPlay, videoId, isPlaying } = video;
+
   return (
     <>
       <div className="flex item-center">
@@ -14,7 +25,7 @@ const VideoCarousel = () => {
               </div>
               <div className="absolute top-12 left-[5%] z-10">
                 {list.textLists.map((text, i) => (
-                  <p key={i} className="md:text-2xl text-xl font-medium">
+                  <p key={text} className="md:text-2xl text-xl font-medium">
                     {text}
                   </p>
                 ))}
