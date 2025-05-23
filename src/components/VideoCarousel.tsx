@@ -22,7 +22,10 @@ const VideoCarousel = () => {
                 <video id="video" playsInline={true} preload="auto" muted>
                   <source src={list.video} type="video/mp4" />
                 </video>
-                <p>I have added some content</p>
+                <p>
+                  I have added some content this is the other content that I
+                  have created
+                </p>
               </div>
               <div className="absolute top-12 left-[5%] z-10">
                 {list.textLists.map((text, i) => (
