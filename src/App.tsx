@@ -9,7 +9,7 @@ function App(): JSX.Element {
       <Navbar />
       <Hero />
       <Highlights />
-    </main>
+    </main> //This is a description that you are going to love
   );
 }
 
